@@ -1,27 +1,53 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
+
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rock Paper Scissors</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <title>Rock, paper, scissor</title>
+        <link rel="stylesheet" href="styles.css">
+
     </head>
+
     <body>
-        
-        <h2>Computer Choice: <span id="computer-choice"></span></h2>
-        <h2>Your Choice: <span id="user-choice"></span></h2>
-        <h2>Result: <span id="result"></span></h2>
-    
-        <button id="rock">rock</button>
-        <button id="paper">paper</button>
-        <button id="scissors">scissors</button>
-    
-        <script src="app.js" charset="utf-8"></script>
+
+
+        <div id="human" class="container">
+
+            <div class="inner-container">
+
+                <div class="player human">Human</div>
+                <div class="rock option human">Rock</div>
+                <div class="paper option human">Paper</div>
+                <div class="scissor option human">Scissor</div>
+                <div class="humanScoreCard score">0</div>
+
+            </div>
+
+        </div>
+
+        <div id="computer" class="container">
+
+            <div class="inner-container">
+
+                <div class="player computer">Computer</div>
+                <div class="rock option computer">Rock</div>
+                <div class="paper option computer">Paper</div>
+                <div class="scissor option computer">Scissor</div>
+                <div class="computerScoreCard score">0</div>
+
+            </div>
+
+        </div>
+
+        <div class="announcement">
+
+            <p class="win"></p>
+
+        </div>
+
+        <script src="app.js"></script>
+
     </body>
+
 </html>

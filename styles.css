@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-grow: 2;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container:first-of-type {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.player,
+.points {
+  font-size: 1.8em;
+  margin: 20px 0 40px;
+}
+
+.option {
+  font-size: 8em;
+  line-height: 1.3em;
+  letter-spacing: -0.08em;
+}
+
+#human .option:hover {
+  color: #ffc600;
+  cursor: pointer;
+}
+
+.winner {
+  background-color: black;
+  color: white;
+}
+
+.selected {
+  color: #ffc600;
+}
+
+.score {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.announcement {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffc600;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.announcement .win {
+  font-size: 8.5em;
+  letter-spacing: -0.08em;
+  line-height: 0.9em;
+  text-align: center;
+}
+
+.visible {
+  display: flex;
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+
+  .container {
+    height: 45vh;
+  }
+  .container:first-of-type {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
